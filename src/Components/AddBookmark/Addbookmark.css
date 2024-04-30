@@ -1,0 +1,74 @@
+.add-bookmark-container {
+  padding: 2rem;
+  margin-top: 1rem;
+  border: 1px solid beige;
+  height: fit-content;
+  border-radius: 1rem;
+  flex-grow: 1;
+  flex-shrink: 2;
+  margin-inline: auto;
+  max-width: 70%;
+}
+.add-bookmark-container > h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bookmark-form-tag {
+  padding: 0.1rem;
+  border-radius: 0.1rem;
+  background-color: rgb(180, 220, 236);
+  cursor: pointer;
+  color: #242424;
+  margin-right: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.form-group {
+  display: flex;
+  margin: 1rem 0;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.description {
+  height: min-content;
+  min-width: 400px;
+  min-height: 150px;
+  max-height: fit-content;
+  background-color: rgb(255, 255, 255);
+  color: #242424;
+  border: 1px solid beige;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  max-width: 300px;
+  font-size: 15px;
+}
+.btn {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.btn:hover {
+  color: white;
+}
+.add-tag-btn {
+  background-color: rgb(110, 159, 212);
+}
+.submit-btn {
+  background-color: rgb(101, 182, 101);
+}
+
+@media (max-width: 600px) {
+  .add-bookmark-container {
+    max-width: 100%;
+  }
+  .description {
+    min-width: 300px;
+  }
+}
